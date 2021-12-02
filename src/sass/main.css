@@ -70,6 +70,10 @@ body {
   background-color: #FFF5F6;
 }
 
+.footer {
+  background-color: #FFF5F6;
+}
+
 .footer_title {
   font-family: Titan One;
   font-style: normal;
@@ -78,5 +82,5 @@ body {
   line-height: 39px;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: #D41443;
+  color: #d41443;
 }/*# sourceMappingURL=main.css.map */
