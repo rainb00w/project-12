@@ -14,10 +14,6 @@ $hero-background: #FFB8CA;
 $social-icons-background: #FEA5BB;
 
 
-body {
-  background-color: $white-color;
-}
-
 // Сброс стилей
 
 .list {
@@ -59,12 +55,8 @@ ul {
 
 // Общие контейнеры
 
-
-
-button {
-  display: inline-block;
-  cursor: pointer;
-  border: none;
+body {
+  background-color: $white-color;
 }
 
 
@@ -83,3 +75,8 @@ button {
 }
 
 
+button {
+  display: inline-block;
+  cursor: pointer;
+  border: none;
+}
