@@ -1,16 +1,22 @@
 
 // Для переменных 
 
-:root {
-  --primary-bg-color: #ffffff;
-  
-}
+$accent-color: #D41443;
+$button-hover-background: #ECEBEB;
+$food-truck-background: #C2E297;
+$cafe-background: #F0D1A5;
+$white-color: #FFFFFF;
+$primary-text-color: #000000;
+$secondary-text-color: #907E82;
+$label-color: #FFA5BA;
+$menu-background: #E17992;
+$hero-background: #FFB8CA;
+$social-icons-background: #FEA5BB;
+
 
 body {
-  background-color: var(--primary-bg-color);
+  background-color: $white-color;
 }
-
-
 
 // Сброс стилей
 
