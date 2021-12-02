@@ -1,18 +1,16 @@
+// Для переменных
 
-// Для переменных 
-
-$accent-color: #D41443;
-$button-hover-background: #ECEBEB;
-$food-truck-background: #C2E297;
-$cafe-background: #F0D1A5;
-$white-color: #FFFFFF;
+$accent-color: #d41443;
+$button-hover-background: #ecebeb;
+$food-truck-background: #c2e297;
+$cafe-background: #f0d1a5;
+$white-color: #ffffff;
 $primary-text-color: #000000;
-$secondary-text-color: #907E82;
-$label-color: #FFA5BA;
-$menu-background: #E17992;
-$hero-background: #FFB8CA;
-$social-icons-background: #FEA5BB;
-
+$secondary-text-color: #907e82;
+$label-color: #ffa5ba;
+$menu-background: #e17992;
+$hero-background: #ffb8ca;
+$social-icons-background: #fea5bb;
 
 // Сброс стилей
 
@@ -50,15 +48,13 @@ ul {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}  
-
+}
 
 // Общие контейнеры
 
 body {
   background-color: $white-color;
 }
-
 
 .container {
   @media screen and (min-width: 480px) {
@@ -67,13 +63,12 @@ body {
 
   @media screen and (min-width: 768px) {
     width: 768px;
-    }
-  
-    @media screen and (min-width: 1200px) {
-      width: 1200px;
-    }
-}
+  }
 
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
+}
 
 button {
   display: inline-block;
