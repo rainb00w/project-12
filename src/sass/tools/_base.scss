@@ -9,7 +9,7 @@ $primary-text-color: #000000;
 $secondary-text-color: #907e82;
 $label-color: #ffa5ba;
 $menu-background: #e17992;
-$hero-background: #ffb8ca;
+$hero-background: #0a0406;
 $social-icons-background: #fea5bb;
 
 // Сброс стилей
@@ -32,12 +32,22 @@ p {
   margin: 0;
 }
 
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
 ul {
+  list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-.visually-hidden {
+%visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -50,28 +60,48 @@ ul {
   overflow: hidden;
 }
 
+
 // Общие контейнеры
 
 body {
   background-color: $white-color;
+  font-family: “DM Sans”, sans-serif;
+  letter-spacing: 0.04em;
+  font-size: 16px;
+  color: #000000;
 }
 
+
+
 .container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+
   @media screen and (min-width: 480px) {
     width: 480px;
   }
 
   @media screen and (min-width: 768px) {
     width: 768px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    width: 1200px;
-  }
+    }
+  
+    @media screen and (min-width: 1200px) {
+      width: 1280px;
+    }
 }
 
-button {
+
+
+%button {
   display: inline-block;
   cursor: pointer;
   border: none;
 }
+
+
+
+
+
+
