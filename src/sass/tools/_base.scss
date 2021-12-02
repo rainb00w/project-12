@@ -3,6 +3,7 @@
 
 :root {
   --primary-bg-color: #ffffff;
+  
 }
 
 body {
@@ -50,8 +51,16 @@ ul {
 }  
 
 
-
 // Общие контейнеры
+
+
+
+button {
+  display: inline-block;
+  cursor: pointer;
+  border: none;
+}
+
 
 .container {
   @media screen and (min-width: 480px) {
