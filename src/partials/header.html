@@ -1,15 +1,83 @@
-<section>
-    <div>
-        <header>
-            <nav>
-                <a href="">
-                    <picture>
-                        <source srcset="../images/mobile/logo-1.png">
-                        <img src="#" alt="">
-
-                    </picture>
-                </a>
+<section id="header" class="hero">
+    <div class="container">
+        <header class="header">
+            <a href="" class="link header__logo">
+                <picture>
+                    <source srcset="../src/images/mobile/logo-1.png 1x, ../src/images/mobile/logo-1@2x.png 2x">                    
+                    <img src="#" alt="logo">
+                </picture>
+            </a>
+            <nav class="header-nav">
+                <ul class="header-nav__list list">
+                    <li class="header-nav__item"><a class="header-nav__link link" href="#header">Home</a></li>
+                    <li class="header-nav__item"><a class="header-nav__link link" href="#about"></a>About us</li>
+                    <li class="header-nav__item"><a class="header-nav__link link" href="#advantages"></a>How it’s made?</li>
+                    <li class="header-nav__item"><a class="header-nav__link link" href="#products"></a>Our products</li>
+                    <li class="header-nav__item"><a class="header-nav__link link" href="#contacts"></a>Contact</li>
+                </ul>
             </nav>
+            <button class="header__btn button" type="button"> By now  ></button>            
         </header>
+        <div class="header-title">
+            <h1 class="header-title__primary">ice cream <br> made with <br><span class="header-title__second">passion</span> </h1>
+            <ul class="list header-title__list">
+                <li class="header-title__item"><a class="header-title__link link" href="#products">Products</a></li>
+                <li class="header-title__item"><a class="header-title__link link" href="#advantages">How it’s made?</a></li>
+            </ul>
+        </div>
+        <div class="header__img header__img--ice">
+            <picture>
+                <source media="(min-width: 1280px)" srcset="../src/images/desktop/slider-pic1-desktop.png 1x, ../src/images/desktop/slider-pic1-desktop@2x.png 2x">
+
+                <source media="(min-width: 768px)"
+                    srcset="../src/images/tablet/slider-pic1-tablet.png 1x, ../src/images/tablet/slider-pic1-tablet@2x.png 2x">
+
+                <source media="(min-width: 480px)"
+                    srcset="../src/images/mobile/slider-pic1.png 1x, ../src/images/mobile/slider-pic1@2x.png 2x">
+                <img src="#" alt="ice-cream">
+            </picture>
+        </div>
+        <div class="header-statistic">
+            <ul class="header-statistic__list list">
+                <li class="header-statistic__item">
+                    16
+                    <p class="header-statistic__info">cafes</p>
+                </li>
+                <li class="header-statistic__item">
+                    23
+                    <p class="header-statistic__info">food trucks</p>
+                </li>
+            </ul>
+        </div>
+        <div class="header__img header__img--milk">
+            <picture>
+                <source media="(min-width: 1280px)"
+                    srcset="../src/images/desktop/slider-pic2-desktop.png 1x, ../src/images/desktop/slider-pic2-desktop@2x.png 2x">
+                
+                <source media="(min-width: 768px)"
+                    srcset="../src/images/tablet/slider-pic2-tablet.png 1x, ../src/images/tablet/slider-pic2-tablet@2x.png 2x">
+                <img src="#" alt="milk">
+            </picture>
+            <div class="header__img-infobox">
+                <p class="header__img-infobox-about">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                </p>
+                <button class="header__img-button button">
+                    <svg class="header__img-icon">
+                        <use></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div>
+            <picture>
+                <source media="(min-width: 1280px)"
+                    srcset="../src/images/desktop/slider-pic3-desktop.png 1x, ../src/images/desktop/slider-pic3-desktop@2x.png 2x">
+            
+                <source media="(min-width: 768px)"
+                    srcset="../src/images/tablet/slider-pic3-tabletpng.png 1x, ../src/images/tablet/slider-pic3-tablet@2x.png 2x">
+                <img src="#" alt="milk">
+            </picture>
+        </div>
     </div>
 </section>
