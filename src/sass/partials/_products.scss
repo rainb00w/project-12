@@ -121,11 +121,11 @@
         transform: translateY(-45%);
         width: 220px;
         height: 224px;
-        background-image: url('../src/images/tablet/home-pic1-tablet.png');
+        background-image: url('../images/tablet/home-pic1-tablet.png');
         background-size: 220px 224px;
         background-repeat: no-repeat;
         @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-          background-image: url('../src/images/tablet/home-pic1-tablet@2x.png');
+          background-image: url('../images/tablet/home-pic1-tablet@2x.png');
         }
       }
       @media screen and (max-width: 767px) {
