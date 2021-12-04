@@ -6,11 +6,49 @@
   outline: 1px solid red;
 }
 
+
+
 .grid-item {
-  width: 150px;
+  
+  @media screen and (max-width: 479px) {
+  width:  30%;
+
   img {
     width: 100%;
     border-radius: 10%;
   }
+  }
+
+  @media screen and (min-width: 480px) {
+    width:  200px;
+
+    img {
+      width: 100%;
+      border-radius: 10%;
+    }
+
+
+    }
+
+
 }
 
+  // @media screen and (ma-width: 480px) {
+
+  // }
+
+  // @media screen and (min-width: 480px) {
+  //   width: 480px;
+  // }
+
+  // @media screen and (min-width: 768px) {
+  //   width: 768px;
+  //   padding-left: 34px;
+  //   padding-right: 34px;
+  //   }
+  
+  //   @media screen and (min-width: 1280px) {
+  //     width: 1280px;
+  //     padding-left: 115px;
+  //     padding-right: 115px;
+  //   }
