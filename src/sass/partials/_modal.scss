@@ -1,10 +1,11 @@
 .section-modal {
+  position: fixed;
   top: 0;
   right: 0;
   background-color: $menu-background;
   padding-top: 50px;
   padding-bottom: 50px;
-  outline: 1px solid red;
+  /*  outline: 1px solid red; */
   width: 254px;
   height: 1002px;
   margin: 0;
@@ -105,16 +106,18 @@
 
 .label-form__itema {
   display: flex;
+  top: 20px;
 }
 
-.label-form__btn {
+.label-form__btna {
+  padding: 20px;
   background-color: $menu-background;
   color: $button-hover-background;
 }
 
 .label-form__item .label-form__btn:focus,
 .label-form__item .label-form__btn:hover,
-.label-form__itema .label-form__btn:focus,
-.label-form__itema .label-form__btn:hover {
+.label-form__itema .label-form__btna:focus,
+.label-form__itema .label-form__btna:hover {
   color: $accent-color;
 }
