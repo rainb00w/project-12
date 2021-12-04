@@ -1,0 +1,149 @@
+@charset "UTF-8";
+/*
+ * Главный файл стилей.
+ * Все паршалы подключаются сюда.
+ */
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: “DM Sans”, sans-serif;
+  letter-spacing: 0.04em;
+  font-size: 16px;
+  color: #000000;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1280px;
+  }
+}
+
+.gallery_main {
+  background-color: #FFF5F6;
+}
+
+.footer {
+  background-color: #FFF5F6;
+}
+
+.footer_logo {
+  max-width: 234px;
+}
+@media screen and (min-width: 768px) {
+  .footer_logo {
+    width: 340px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer_logo {
+    width: 474px;
+    margin-top: 165px;
+  }
+}
+
+.footer_title {
+  font-family: Titan One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 34px;
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #d41443;
+  max-width: 150px;
+  padding-bottom: 17px;
+}
+@media screen and (min-width: 768px) {
+  .footer_title {
+    padding-bottom: 16px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer_title {
+    padding-bottom: 15px;
+  }
+}
+
+.footer_text {
+  height: 76px;
+  font-family: Titan One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 34px;
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #d41443;
+}
+.footer__list {
+  display: flex;
+  justify-content: space-between;
+  max-width: 152.47px;
+}
+@media screen and (min-width: 768px) {
+  .footer__list {
+    width: 162px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__list {
+    width: 151px;
+  }
+}
+
+.footer__icon {
+  width: 32px;
+  height: 32px;
+  fill: #fff;
+}
+.footer__icon:hover {
+  fill: #D41443;
+}/*# sourceMappingURL=main.css.map */
