@@ -2,10 +2,13 @@
   background-color: $footer-background;
 }
 .footer_logo {
+  display: block;
   max-width: 234px;
 
   @media screen and (min-width: 768px) {
+
     width: 340px;
+
   }
 
   @media screen and (min-width: 1200px) {
@@ -14,26 +17,32 @@
   }
 }
 .footer_title {
-  font-family: Titan One;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 34px;
-  line-height: 1.14;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: #d41443;
-  max-width: 150px;
+  display: block;
+font-family: Titan One;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 21px;
+text-transform: uppercase;
+color: #FFA5BA;
+  max-width: 232px;
   padding-bottom: 17px;
+  padding-left: 22px;
+  padding-right: auto;
   @media screen and (min-width: 768px) {
     padding-bottom: 16px;
+    width: 340px;
+    display: flex;
   }
 
   @media screen and (min-width: 1200px) {
     padding-bottom: 15px;
+    width: 474px;
   }
 }
 .footer_text {
-  height: 76px;
+  display: block;
+  // height: 76px;
   font-family: Titan One;
   font-style: normal;
   font-weight: normal;
@@ -42,8 +51,12 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #d41443;
+  max-width: 200px;
+  padding-bottom: 22px;
+  padding-left: 20px;
+  padding-right: auto;
   @media screen and (min-width: 480px) {
-    
+   display: flex; 
   }
 
   @media screen and (min-width: 768px) {
@@ -58,7 +71,10 @@
   display: flex;
   justify-content: space-between;
   max-width: 152.47px;
-
+  height: 32px;
+margin-bottom: 46px;
+padding-right: 20.53px;
+padding-left: auto;
   @media screen and (min-width: 768px) {
     width: 162px;
   }
@@ -74,4 +90,25 @@
   &:hover {
     fill: #D41443;
   }
+}
+.footer__contacts {
+display: inline-block;
+padding-bottom: 65px;
+font-family: DM Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 12px;
+line-height: 186%;
+text-align: right;
+}
+.footer__company {
+  display: block;
+  font-family: DM Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 152%;
+text-align: center;
+color: #907E82;
+padding-bottom: 25px;
 }
