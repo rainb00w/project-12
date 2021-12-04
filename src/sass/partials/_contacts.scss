@@ -10,7 +10,6 @@
     border-radius: 24px;
     @media screen and (max-width: 768px) {
       min-width: 220px;
-      /* min-height: 427px; */
       margin-bottom: 20px;
       padding: 43px 20px;
     }
@@ -37,6 +36,9 @@
     line-height: 1.86;
     letter-spacing: 0.04em;
     margin-bottom: 10px;
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
   &__title--pink {
     color: $label-color;
