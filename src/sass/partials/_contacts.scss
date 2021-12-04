@@ -39,9 +39,9 @@
     &:last-child {
       margin-bottom: 0;
     }
-  }
-  &__title--pink {
-    color: $label-color;
+    &--pink {
+      color: $label-color;
+    }
   }
   &__subtitle {
     font-size: 16px;
@@ -57,5 +57,9 @@
     padding-bottom: 25px;
     border-top: 1px solid #e1e1e1;
     border-bottom: 1px solid #e1e1e1;
+  }
+  &__link {
+    color: $secondary-text-color;
+    margin-top: 25px;
   }
 }
