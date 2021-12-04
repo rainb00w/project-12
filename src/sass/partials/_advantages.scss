@@ -82,24 +82,27 @@
 }
 
 .advantages__pre-title-a::before {
-  content: '$';
-  background-image: url();
+  content: '';
+  background-image: url('../images/advantages/icon1.png');
+  background-repeat: no-repeat;
   display: block;
   position: absolute;
   bottom: 120px;
 }
 
 .advantages__pre-title-b::before {
-  content: '#';
-  background-image: url();
+  content: '';
+  background-image: url('../images/advantages/icon2.png');
+  background-repeat: no-repeat;
   display: block;
   position: absolute;
   bottom: 120px;
 }
 
 .advantages__pre-title-c::before {
-  content: '@';
-  background-image: url();
+  content: '';
+  background-image: url('../images/advantages/icon3.png');
+  background-repeat: no-repeat;
   display: block;
   position: absolute;
   bottom: 120px;
