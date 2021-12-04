@@ -19,19 +19,40 @@
   }
   }
 
+
+
   @media screen and (min-width: 480px) {
-    width:  200px;
+    width:  140px;
 
     img {
       width: 100%;
       border-radius: 10%;
     }
+    }
+
+}
 
 
+
+.grid-item--width2 {
+  
+  @media screen and (min-width: 480px) {
+    width:  280px;
+
+    img {
+      width: 100%;
+      border-radius: 10%;
+    }
     }
 
 
 }
+
+
+
+
+
+
 
   // @media screen and (ma-width: 480px) {
 
