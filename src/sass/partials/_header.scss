@@ -1,18 +1,21 @@
-.hero {
+.section-header {
     background-color: $hero-background;
 }
+
 
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-top: 37px;
+    
 }
 
 
 .header-nav__list {
     display: none;
     justify-content: center;
+    z-index: 50;
 
     @media screen and (min-width: 1280px) {
         display: flex;
@@ -23,6 +26,14 @@
     margin-right: 35px;
 }
 
+.header-nav__link {
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
+    color: $white-color;
+}
+
 .header-nav__link--current {
     font-weight: 700;
     font-size: 16px;
@@ -30,18 +41,28 @@
     color: $accent-color;
 }
 
-.header-nav__item {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.31;
-    color: $white-color;
+.menu-burger-box {
+    display: flex;
+}
+
+.menu_burger {
+    width: 44px;
+    height: 44px;
+    fill: $accent-color;
+    margin-right: 30px;
+
+    @media screen and (min-width: 1280px) {
+        display: none;
+    }
 }
 
 .header__btn {
     display: none;
 
     @media screen and (min-width: 768px) {
-        display: inline-block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         font-weight: 700;
         font-size: 16px;
         line-height: 1.31;
@@ -53,11 +74,43 @@
         background-color: $white-color;
         border-radius: 22px; 
     }
-
     
 }
 
-.header-title__primary {
+.header__btn:hover {
+    background-color: $button-hover-background;
+}
+
+
+
+.header__icon {
+    width: 6px;
+    height: 10px;
+    margin-left: 12px;
+}
+
+
+
+.hero__container {
+    position: relative;
+    padding-bottom: 0;
+}
+
+.hero-title {
+    position: relative;
+    z-index: 100;
+    margin-top: 137px;
+
+    @media screen and (min-width: 768px) {
+        margin-top: 15px;
+    }
+
+    @media screen and (min-width: 1280px) {
+       margin-top: 84px;         
+    }
+}
+
+.hero-title__primary {
     font-family: Titan One;
     font-weight: 400;
     font-size: 26px;
@@ -73,5 +126,228 @@
     @media screen and (min-width: 1280px) {
         font-size: 38px;
         line-height: 1.16;
+        
     }
 }
+.hero-title__second {
+    font-weight: 400;    
+    font-size: 48px;
+    line-height: 96.5%;
+    color: $accent-color;
+
+    @media screen and (min-width: 768px) {
+        font-size: 34px;
+        line-height: 90.5%;
+    }
+
+    @media screen and (min-width: 1280px) {
+        font-size: 58px;
+        line-height: 90.5%;
+    }
+}
+
+.hero-title__list {
+    display: flex;
+    margin-top: 25px;
+}
+
+.hero-title__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.29;
+    border-radius: 20px;
+    min-height: 40px;
+    cursor: pointer;
+
+    @media screen and (max-width: 767px) {
+        margin-bottom: 160px;
+    }
+}
+
+.hero-title__item--dark {
+    width: 104px;     
+    background-color: $accent-color;
+}
+
+.hero-title__item--dark:hover {
+    background-color: #C7133E;
+}
+.hero-title__item--light {
+    width: 138px;
+    background-color: $white-color;
+}
+
+.hero-title__item--light:hover {
+    background-color: $button-hover-background;
+}
+
+.hero-title__item:not(:last-child) {
+    margin-right: 15px;
+}
+
+.hero-title__link--dark {
+    color: $white-color;
+}
+
+.hero-title__link--light {
+    color: $accent-color;
+}
+
+.hero__img--ice {
+    position: absolute;
+    z-index: 70;
+    width: 171px;
+    right: 32px;
+    bottom: 0;
+
+
+    @media screen and (min-width: 768px) {
+        
+    }
+
+    @media screen and (min-width: 1280px) {        
+        width: 538px;
+        height: 613px;        
+        right: 450px;
+        width: 236px;
+    }
+    
+}
+
+.hero__img--circle {
+    position: absolute;
+    z-index: -100;
+    width: 538px;
+    height: 538px;
+    right: 19px;
+    bottom: 75px;
+    border-radius: 50%;
+    background-color: $label-color;
+}
+
+.hero__img-icecream {
+    position: absolute;
+    padding: 0;
+    bottom: 0;
+    
+}
+
+.hero-statistic {
+    position: absolute;
+    display: none;    
+
+    @media screen and (min-width: 768px) {
+        display: block;
+        right: 42px;
+        bottom: 215px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        right: 115px;
+        bottom: 341px;
+    }
+}
+
+.hero-statistic__item {
+    font-family: Titan One;
+    font-weight: 400;
+    font-size: 46px;
+    line-height: 1.15;
+    color: $accent-color;
+    text-align: right;
+
+    &:not(:last-child) {
+        margin-bottom: 15px;
+    }
+    
+}
+
+.hero-statistic__info {
+    font-family: DM Sans;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.29;
+    text-align: right;
+    color: $white-color;
+    margin-top: 2px;
+}
+.hero__img--box {
+    position: relative;
+    z-index: 100;
+    display: flex;
+    align-items: flex-end;
+    margin-top: 56px;
+    padding-bottom: 45px;
+}
+.hero__img-milk {
+    display: none;
+
+    @media screen and (min-width: 768px) {
+        display: block;
+        
+    }
+
+    @media screen and (min-width: 1280px) {
+        width: 188px;
+        margin-right: 30px;
+    }
+    
+}
+.hero__img-infobox {
+    display: none;
+
+    @media screen and (min-width: 768px) {
+        display: block;
+    }
+}
+
+.hero__img-infobox-about {
+    width: 200px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.43;
+    color: $white-color;
+
+}
+
+.hero__img-button {
+    cursor: pointer;
+    width: 26px;
+    height: 26px;
+    border: none;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-bottom: 11px;
+}
+
+.hero__img-icon {
+    width: 100%;
+    height: 100%;
+    fill: $accent-color;
+}
+
+.hero__img-girl {
+    display: none;
+    position: absolute;
+    z-index: 120;
+    bottom: 0;
+
+    @media screen and (min-width: 768px) {
+        display: block;
+        right: 34px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        padding: 0;        
+        width: 293px;
+        right: 109px;
+        width: 293px;
+    }
+    
+}
+
+
+
