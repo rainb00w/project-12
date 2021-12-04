@@ -12,7 +12,10 @@ $menu-background: #e17992;
 $hero-background: #FFB8CA;
 $social-icons-background: #fea5bb;
 $footer-background:#FFF5F6;
-
+$time:500ms;
+$cubic:cubic-bezier(0.4, 0, 0.2, 1);
+$footer-contacts-text:000000;
+$footer-border:#e1e1e1;
 // Сброс стилей
 
 .list {
