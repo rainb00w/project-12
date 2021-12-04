@@ -83,11 +83,14 @@ padding-left: auto;
     width: 151px;
   }
 }
+
 .footer__icon {
+  fill: black;
   width: 32px;
   height: 32px;
-  fill: #fff;
-  &:hover {
+  // fill:#fea5bb;
+  background-color: black;
+  &:hover, &:focus {
     fill: #D41443;
   }
 }
