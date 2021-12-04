@@ -6,12 +6,24 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    // @media screen and (max-width: 480px) {
-    //     background-image: url(./images/mobile/sectionbg1mob.png);
-    // }
-}
+    @media screen and (max-width: 480px) {
+        background-image: url(../images/mobile/sectionbg1mob.png);
+    }
+    // @media screen and (min-device-pixel-ratio: 2),
+    // (-webkit-min-device-pixel-ratio: 2),
+    // (min-resolution: 192dpi),
+    // (min-resolution: 2dppx) {
+    // url(./src/images/mobile/sectionbg1mob@2x.png);
+    //     }
+
+    }
+
 .about__subtitle {
     margin: 0 auto;
+    padding-top: 125px;
+    padding-bottom: 15px;
+    font-family: Titan One;
+    font-style: 400;
     font-size: 18px;
     line-height: 1.67;
     font-weight: 400;
@@ -30,6 +42,9 @@
 }
 .about__title {
     margin: 0 auto;
+    padding-bottom: 26px;
+    font-family: Titan One;
+    font-style: 400;
     font-size: 34px;
     line-height: 1.15;
     text-align: center;
@@ -48,13 +63,25 @@
 
 // .about__container {
 // }
-// .about__home-pic4 {
-// }
+.about__home-pic4 {
+    padding-bottom: 46px;
+}
 .about__para1 {
     font-weight: 500;
 font-size: 12px;
 line-height:1.58;
 color: $primary-text-color;
+display: block;
+width: 100%;
+height: 79px;
+text-align: start;
+word-wrap: break-word;
+padding-left: 50px;
+padding-right: 50px;
+padding-bottom: 47px;
+// display: flex;
+// justify-content: center;
+// align-items: center;
 @media screen and (min-width:768px) {
     font-size: 14px;
 line-height: 1.79;
@@ -70,6 +97,13 @@ line-height: 1.79;
 font-size: 12px;
 line-height: 1.58;
 color: $secondary-text-color;
+display: block;
+width: 100%;
+height: 155px;
+padding-left: 50px;
+padding-right: 50px;
+padding-bottom: 47px;
+text-align: start;
 @media screen and (min-width:768px) {
     font-size: 14px;
 line-height: 1.79;
@@ -82,11 +116,11 @@ letter-spacing: 0.04em;
 }
 }
 .about__button {
-    position: absolute;
 width: 176px;
 height: 44px;
     background: $white-color;
 border-radius: 22px;
+border: none;
 font-weight: 700;
 font-size: 14px;
 line-height: 1.29;
