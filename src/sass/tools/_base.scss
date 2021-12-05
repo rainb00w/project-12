@@ -9,9 +9,13 @@ $primary-text-color: #000000;
 $secondary-text-color: #907e82;
 $label-color: #ffa5ba;
 $menu-background: #e17992;
-$hero-background: #0a0406;
+$hero-background: #FFB8CA;
 $social-icons-background: #fea5bb;
-
+$footer-background:#FFF5F6;
+$time:500ms;
+$cubic:cubic-bezier(0.4, 0, 0.2, 1);
+$footer-contacts-text:000000;
+$footer-border:#e1e1e1;
 // Сброс стилей
 
 .list {
@@ -47,7 +51,7 @@ ul {
   margin: 0;
 }
 
-%visually-hidden {
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -71,13 +75,21 @@ body {
 }
 
 .container {
+  
   margin-left: auto;
   margin-right: auto;
   padding-right: 20px;
   padding-left: 20px;
+  
+  @media screen and (max-width: 479px) {
+    width: 100%;
+  }
+
 
   @media screen and (min-width: 480px) {
     width: 480px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   @media screen and (min-width: 768px) {
@@ -85,6 +97,20 @@ body {
     padding-left: 34px;
     padding-right: 34px;
   }
+
+  @media screen and (min-width: 1050px) {
+    width: 1050px;
+    padding-left: 115px;
+    padding-right: 115px;
+  }
+
+  
+   @media screen and (min-width: 1280px) {
+      width: 1280px;
+      padding-left: 115px;
+      padding-right: 115px;
+    }
+
 
   @media screen and (min-width: 1280px) {
     width: 1280px;

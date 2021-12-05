@@ -1,0 +1,192 @@
+.footer {
+  padding-top: 134px;
+  background-color: $footer-background;
+  @media screen and (min-width: 768px) {
+    padding-top: 158px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-top: 165px;
+  }
+}
+.footer__logo {
+  display: block;
+  max-width: 234px;
+  @media screen and (min-width: 768px) {
+    width: 474px;
+  }
+}
+.footer__title {
+  display: block;
+  font-family: Titan One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: $label-color;
+  padding-bottom: 17px;
+  @media screen and (max-width: 767px) {
+    max-width: 232px;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    padding-bottom: 16px;
+    width: 340px;
+    font-size: 26px;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 15px;
+    width: 474px;
+    font-size: 30px;
+    line-height: 1.13;
+  }
+}
+.footer__text {
+  display: block;
+  font-family: Titan One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 34px;
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $accent-color;
+  padding-bottom: 22px;
+  @media screen and (max-width: 767px) {
+    max-width: 200px;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+    line-height: 1.15;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding-bottom: 91px;
+  }
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    width: 477px;
+    font-size: 58px;
+    line-height: 1.14;
+    padding-bottom: 97px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 58px;
+    line-height: 1.14;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $accent-color;
+  }
+}
+.footer__list {
+  display: flex;
+  justify-content: space-between;
+  max-width: 152.47px;
+  height: 32px;
+  margin-bottom: 46px;
+  margin-left: auto;
+  @media screen and (min-width: 768px) {
+    width: 162px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 151px;
+  }
+}
+
+.footer__icon {
+  width: 32px;
+  height: 32px;
+  fill: $social-icons-background;
+  transition-property: fill;
+  transition-duration: $time;
+  transition-timing-function: $cubic;
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+  }
+  @media screen and (min-width: 768px) {
+    width: 34x;
+    height: 34px;
+  }
+}
+.footer__contacts {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  padding-bottom: 43px;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 186%;
+  text-align: right;
+  color: $footer-contacts-text;
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 186%;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 186%;
+    letter-spacing: 0.02em;
+  }
+}
+.footer__tel {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 186%;
+  color: $accent-color;
+  padding-left: 5px;
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 186%;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 186%;
+    letter-spacing: 0.02em;
+  }
+}
+.footer__company {
+  display: block;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 152%;
+  text-align: center;
+  color: $secondary-text-color;
+  padding-bottom: 25px;
+  padding-top: 22px;
+  border-top: 1px solid $footer-border;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 18px;
+    padding-top: 29px;
+    line-height: 186%;
+    letter-spacing: 0.02em;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 9px;
+    padding-top: 10px;
+  }
+}
+.footer__company--text {
+  @media screen and (max-width: 767px) {
+    display: inline-block;
+    max-width: 150px;
+  }
+}
+.footer__nav {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+}
