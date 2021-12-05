@@ -4,7 +4,7 @@
             <a href="" class="link header__logo">
                 <picture>
                     <source srcset="../src/images/mobile/logo-1.png 1x, ../src/images/mobile/logo-1@2x.png 2x">                    
-                    <img src="#" alt="logo">
+                    <img class="logo" src="#" alt="logo">
                 </picture>
             </a>
             <nav class="header-nav">
@@ -17,7 +17,7 @@
                 </ul>
             </nav>
             <div class="menu-burger-box">
-                <svg class="menu_burger">
+                <svg data-menu-open class="menu_burger">
                     <use href="../src/images/symbol-defs.svg#menu_burger"></use>
                 </svg>
             
@@ -50,13 +50,15 @@
         </div>
         <div class="hero-statistic">
             <ul class="hero-statistic__list list">
-                <li class="hero-statistic__item">
+                <li class="hero-statistic__item hero-statistic__item--cafe">
+                    <div class="hero-statistic__circle"></div>
                     16
                     <p class="hero-statistic__info">cafes</p>
                 </li>
-                <li class="hero-statistic__item">
+                <li class="hero-statistic__item hero-statistic__item--truck">
+                    <div class="hero-statistic__circle"></div>
                     23
-                    <p class="hero-statistic__info">food trucks</p>
+                    <p class="hero-statistic__info hero-statistic__info--truck">food trucks</p>
                 </li>
             </ul>
         </div>
