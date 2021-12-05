@@ -64,7 +64,6 @@ ul {
   overflow: hidden;
 }
 
-
 // Общие контейнеры
 
 body {
@@ -74,8 +73,6 @@ body {
   font-size: 16px;
   color: #000000;
 }
-
-
 
 .container {
   
@@ -114,19 +111,16 @@ body {
       padding-right: 115px;
     }
 
-  
+
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
+    padding-left: 115px;
+    padding-right: 115px;
+  }
 }
-
-
 
 %button {
   display: inline-block;
   cursor: pointer;
   border: none;
 }
-
-
-
-
-
-
