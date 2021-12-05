@@ -2,17 +2,23 @@
   text-align: center;
   padding-top: 127px;
   padding-bottom: 119px;
+  padding-left: 115px;
+  padding-right: 115px;
   max-width: 1280px;
   position: relative;
   @media screen and (max-width: 1199px) {
     max-width: 768px;
     padding-top: 122px;
     padding-bottom: 112px;
+    padding-right: 34px;
+    padding-left: 34px;
   }
   @media screen and (max-width: 767px) {
     max-width: 480px;
     padding-top: 121px;
     padding-bottom: 98px;
+    padding-right: 20px;
+    padding-left: 20px;
   }
   &__container {
     margin-left: auto;
@@ -239,6 +245,7 @@
     }
   }
   &__button {
+    position: relative;
     @extend %button;
     margin-top: 62px;
     width: 40px;
@@ -293,23 +300,45 @@
     }
   }
 }
-// .section-products__thumb {
-//   position: absolute;
-//   width: 100%;
-//   height: 335px;
-//   background-color: teal;
-//   top: 0;
-//   left: 0;
 
-//   padding: 63px 24px;
-//   opacity: 0;
-//   transform: translateY(200%);
-//   transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1),
-//     transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
-// }
-// .section-products__list__item:hover .section-products__thumb,
-// .section-products__list__item:focus .section-products__thumb {
-//   opacity: 1;
-//   transform: translateY(45%);
-//   z-index: 3;
-// }
+.image-text {
+  opacity: 0;
+  position: absolute;
+  top: -235px;
+  left: -145px;
+  width: 330px;
+  height: 330px;
+  background-image: linear-gradient(to bottom, rgb(130, 238, 88), rgb(243, 239, 14));
+  transform: scaleX(0.3);
+  padding: 48px 40px;
+  border-radius: 22px;
+  @media screen and (max-width: 1199px) {
+    width: 220px;
+    height: 282px;
+    top: -200px;
+    left: -90px;
+  }
+  @media screen and (max-width: 767px) {
+    width: 280px;
+    height: 282px;
+    top: -190px;
+    left: -120px;
+  }
+  &.is-open {
+    opacity: 1;
+    transform: scaleX(1);
+    transition: transform 750ms $cubic;
+  }
+  &__title {
+    font-family: 'Titan One', sans-serif;
+    font-size: 20px;
+    color: #4e3d64b2;
+    margin-bottom: 40px;
+  }
+  &__item {
+    font-family: 'Titan One', sans-serif;
+    font-size: 14px;
+    color: #4e3d64b2;
+    margin-bottom: 10px;
+  }
+}
