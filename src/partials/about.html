@@ -1,4 +1,4 @@
-<section class="about container" id="about">
+<section class="about" id="about">
     <div class="about__text">
     <p class="about__subtitle">tradition and love</p>
     <h2 class="about__title">how it’s made?</h2>
@@ -29,14 +29,18 @@
             <p class="about__para2">Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh, tincidunt.
             <br/>
             <br/> Aliquam erat volutpat. Aenean accumsan.</p>
+            <button type="button" class="about__button button" data-about-open >Read more <space>></space> </button>
         </div>
     </li>
-    <li class="about__about-item">
-        <button class="about__button button">Read more <space>></space> </button>
-    </li>
-    </ul>
-        
+    </ul>      
 </section>
 
 
+<!-- модалка -->
+<div class="about__backdrop about-hidden" data-about>
+    <div class="about__modal">
+        <button type="button" class="about__modal-button" data-about-close ></button>
+        <p class="about__modal-para">Cows are milked using vacuum cups which are attached to the cow's teats. The milk is sent through stainless steel pipes to large refrigerated vats, then stored at 5°C or less. Within 48 hours, milk is taken in tankers to a milk factory where it's pasteurised and homogenised.</p>
+    </div>
+</div>
 
