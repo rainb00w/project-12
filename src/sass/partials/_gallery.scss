@@ -1,7 +1,6 @@
 .gallery {
   background: rgb(255, 255, 255);
   background: linear-gradient(0deg, rgba(255, 255, 255, 1) 50%, rgba(255, 245, 246, 1) 50%);
-  outline: 1px solid red;
   padding-left: 0;
 
   @media only screen and (max-width: 479px) and (min-width: 320px) {
