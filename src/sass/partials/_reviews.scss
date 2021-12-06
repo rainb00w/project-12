@@ -109,7 +109,10 @@ input[name='r'] {
   letter-spacing: 0.04em;
 
   color: #000000;
+
+  background: repeating-linear-gradient(transparent, transparent 20px, #E1E1E1 20px, #E1E1E1 25px);
 }
+
 
 // span {
 //   position: relative;
