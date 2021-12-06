@@ -1,20 +1,22 @@
 .section-products {
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
   padding-top: 127px;
   padding-bottom: 119px;
   padding-left: 115px;
   padding-right: 115px;
-  max-width: 1280px;
+  width: 1280px;
   position: relative;
-  @media screen and (max-width: 1199px) {
-    max-width: 768px;
+  @media screen and (max-width: 1279px) {
+    width: 768px;
     padding-top: 122px;
     padding-bottom: 112px;
     padding-right: 34px;
     padding-left: 34px;
   }
   @media screen and (max-width: 767px) {
-    max-width: 480px;
+    width: 480px;
     padding-top: 121px;
     padding-bottom: 98px;
     padding-right: 20px;
@@ -24,7 +26,7 @@
     margin-left: auto;
     margin-right: auto;
     width: 1050px;
-    @media screen and (max-width: 1199px) {
+    @media screen and (max-width: 1279px) {
       width: 700px;
     }
     @media screen and (max-width: 767px) {
@@ -41,7 +43,7 @@
     line-height: 1.145;
     text-transform: uppercase;
     margin-bottom: 259px;
-    @media screen and (max-width: 1199px) {
+    @media screen and (max-width: 1279px) {
       font-size: 48px;
       letter-spacing: 0.04em;
       margin-bottom: 150px;
@@ -63,7 +65,7 @@
     @media screen and (max-width: 767px) {
       font-size: 18px;
     }
-    @media screen and (max-width: 1199px) {
+    @media screen and (max-width: 1279px) {
       font-size: 26px;
     }
   }
@@ -73,7 +75,7 @@
   display: flex;
   margin: -15px;
   position: relative;
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 1279px) {
     display: flex;
     margin: -10px;
   }
@@ -93,7 +95,7 @@
     margin: 15px;
     height: 525px;
     border-radius: 22px;
-    @media screen and (max-width: 1199px) {
+    @media screen and (max-width: 1279px) {
       padding: 40px 11px;
       width: calc((100% - 2 * 20px) / 3);
       margin: 10px;
@@ -123,7 +125,7 @@
       @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
         background-image: url('../images/desktop/home-pic1-desktop@2x.png');
       }
-      @media screen and (max-width: 1199px) {
+      @media screen and (max-width: 1279px) {
         transform: translateY(-45%);
         width: 220px;
         height: 224px;
@@ -164,7 +166,7 @@
       @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
         background-image: url('../images/desktop/home-pic2-desktop@2x.png');
       }
-      @media screen and (max-width: 1199px) {
+      @media screen and (max-width: 1279px) {
         transform: translateY(-45%);
         width: 220px;
         height: 224px;
@@ -204,7 +206,7 @@
       @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
         background-image: url('../images/desktop/home-pic3-desktop@2x.png');
       }
-      @media screen and (max-width: 1199px) {
+      @media screen and (max-width: 1279px) {
         width: 220px;
         height: 224px;
         transform: translateY(-45%);
@@ -240,7 +242,7 @@
     font-weight: 700;
     line-height: 1.76;
     color: $white-color;
-    @media screen and (max-width: 1199px) {
+    @media screen and (max-width: 1279px) {
       font-size: 14px;
     }
   }
@@ -257,7 +259,7 @@
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url('../images/mobile/arrow_2@2x.png');
     }
-    @media screen and (max-width: 1199px) {
+    @media screen and (max-width: 1279px) {
       margin-top: 40px;
     }
     @media screen and (max-width: 767px) {
@@ -274,7 +276,7 @@
     margin-bottom: 32px;
     margin-left: auto;
     margin-right: auto;
-    @media screen and (max-width: 1199px) {
+    @media screen and (max-width: 1279px) {
       margin-top: 30px;
       margin-bottom: 30px;
     }
@@ -312,7 +314,7 @@
   transform: scaleX(0.3);
   padding: 48px 40px;
   border-radius: 22px;
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 1279px) {
     width: 220px;
     height: 282px;
     top: -200px;
