@@ -1,6 +1,10 @@
 .contacts {
   height: 100%;
   background-image: linear-gradient(to bottom, $white-color 75px, #fff5f6 0px);
+  /* @media screen and (min-width: 1280px) {
+    background-image: url(../images/desktop/sectionbg2-1.png);
+    background-repeat: no-repeat;
+  } */
   &__headline {
     @extend %visually-hidden;
   }
@@ -176,6 +180,12 @@
   @media screen and (min-width: 1279px) {
     margin-top: 86px;
   }
+  &__icon {
+    margin-left: 14px;
+    &--white {
+      fill: $white-color;
+    }
+  }
   &__button {
     @extend %button;
     color: $white-color;
@@ -185,6 +195,10 @@
     &--white {
       background-color: $white-color;
       color: $accent-color;
+      &:hover,
+      &:focus {
+        background-color: $button-hover-background;
+      }
       @media screen and (max-width: 768px) {
         margin-top: 10px;
       }
