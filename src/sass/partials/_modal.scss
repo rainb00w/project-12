@@ -68,6 +68,8 @@
   text-align: start;
   &-item {
     display: inline-block;
+    display: flex;
+    align-items: center;
     height: 42px;
     padding-left: 24px;
     border: 1px solid #e18298;
