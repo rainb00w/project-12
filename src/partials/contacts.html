@@ -1,5 +1,13 @@
 <section id="contacts" class="contacts">
   <div class="container">
+    <!-- <div>
+      <picture>
+        <source
+          srcset="./images/desktop/sectionbg2-1.png 1x, ./images/desktop/sectionbg2-1@2x.png 2x"
+          media="(min-width:1280px)"
+        />
+      </picture>
+    </div> -->
     <h2 class="contacts__headline">contacts card</h2>
     <ul class="contacts__list">
       <li class="contacts__item">
@@ -79,10 +87,20 @@
       </li>
     </ul>
     <ul class="button-list">
-      <li><button type="button" class="button-list__button">Our Locations</button></li>
+      <li>
+        <button type="button" class="button-list__button">
+          Our Locations
+          <svg class="button-list__icon button-list__icon--white" width="4px" height="8px">
+            <use href="../src/images/symbol-defs.svg#more-than"></use>
+          </svg>
+        </button>
+      </li>
       <li>
         <button type="button" class="button-list__button button-list__button--white">
           Franchise
+          <svg class="button-list__icon" width="4px" height="8px">
+            <use href="../src/images/symbol-defs.svg#more-than"></use>
+          </svg>
         </button>
       </li>
     </ul>
