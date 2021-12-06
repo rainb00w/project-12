@@ -15,10 +15,9 @@
 .header__mobile-window {
   position: fixed;
   text-align: -webkit-center;
-  z-index: 230;
+  z-index: 100;
   top: 0;
   right: 0;
-  margin-right: 5%;
   transform: translateX(200%);
   width: 254px;
   height: 100vh;
@@ -30,6 +29,10 @@
   @media screen and (max-width: 767px) {
     width: 250px;
   }
+  @media screen and (max-width: 479px) {
+    width: 320px;
+  }
+
   @media screen and (min-width: 1280px) {
     display: none;
   }
@@ -39,7 +42,13 @@
   opacity: 1;
   visibility: visible;
   pointer-events: initial;
-  transform: translateX(-55%);
+  transform: translateX(0);
+  @media screen and (max-width: 767px) {
+    transform: translatex(5%);
+  }
+  @media screen and (max-width: 479px) {
+    transform: translatex(0);
+  }
 }
 
 .header__menu-close {
@@ -59,6 +68,8 @@
   text-align: start;
   &-item {
     display: inline-block;
+    display: flex;
+    align-items: center;
     height: 42px;
     padding-left: 24px;
     border: 1px solid #e18298;
