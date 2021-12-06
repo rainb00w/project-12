@@ -181,8 +181,10 @@
   }
   &__icon {
     margin-left: 14px;
+    stroke: $accent-color;
     &--white {
       fill: $white-color;
+      stroke: $white-color;
     }
   }
   &__button {
