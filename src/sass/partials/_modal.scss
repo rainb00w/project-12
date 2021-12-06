@@ -17,8 +17,8 @@
   text-align: -webkit-center;
   z-index: 100;
   top: 0;
-  right: 0;
-  transform: translateX(200%);
+  margin-left: 45px;
+  // transform: translateX(200%);
   width: 254px;
   height: 100vh;
   padding-top: 60px;
@@ -28,9 +28,11 @@
   pointer-events: none;
   @media screen and (max-width: 767px) {
     width: 250px;
+    margin-left: -185px;
   }
   @media screen and (max-width: 479px) {
     width: 320px;
+    margin-left: -215px;
   }
 
   @media screen and (min-width: 1280px) {
