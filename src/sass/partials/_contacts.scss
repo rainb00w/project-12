@@ -1,10 +1,9 @@
 .contacts {
-  height: 100%;
+  position: relative;
   background-image: linear-gradient(to bottom, $white-color 75px, #fff5f6 0px);
-  /* @media screen and (min-width: 1280px) {
-    background-image: url(../images/desktop/sectionbg2-1.png);
-    background-repeat: no-repeat;
-  } */
+  &__sectionbg {
+    width: 100%;
+  }
   &__headline {
     @extend %visually-hidden;
   }
@@ -182,8 +181,10 @@
   }
   &__icon {
     margin-left: 14px;
+    stroke: $accent-color;
     &--white {
       fill: $white-color;
+      stroke: $white-color;
     }
   }
   &__button {
@@ -216,5 +217,15 @@
     }
 
     border-radius: 22px;
+  }
+}
+.sectionbg {
+  @media screen and(min-width: 1279px) {
+    position: absolute;
+    top: 210px;
+    width: 100%;
+  }
+  @media screen and (max-width: 1279px) {
+    display: none;
   }
 }
