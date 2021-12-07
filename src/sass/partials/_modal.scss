@@ -34,10 +34,7 @@
   @media screen and (max-width: 479px) {
     width: 320px;
     margin-left: -215px;
-  
   }
-
-
 
   @media screen and (min-width: 1280px) {
     display: none;
@@ -49,11 +46,15 @@
   visibility: visible;
   pointer-events: initial;
   transform: translateX(0);
+  transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+
   @media screen and (max-width: 767px) {
     transform: translatex(5%);
+    transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   @media screen and (max-width: 479px) {
     transform: translatex(0);
+    transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 
@@ -93,9 +94,8 @@
   line-height: 18px;
   color: #ffffff;
   &:hover {
-      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
-
 }
 .mobile-menu__button {
   display: inline-block;
