@@ -106,6 +106,7 @@
   &:focus {
     fill: $accent-color;
     animation: animate 3000ms infinite 250ms;
+    perspective: 500px;
   }
   @media screen and (min-width: 768px) {
     width: 34x;
@@ -114,13 +115,14 @@
 }
 @keyframes animate {
   0% {
-    transform: scale(1);
+    transform: scale(1) perspective(300px) rotateY(0deg);
   }
   50% {
-    transform: scale(1.25);
+    transform: scale(1.25) perspective(300px) rotateY(60deg);
   }
   100% {
-    transform: scale(1);
+    transform: scale(1) perspective(300px) rotateY(0deg);
+   
   }
 }
 .footer__contacts {
