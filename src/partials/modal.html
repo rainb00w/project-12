@@ -1,0 +1,53 @@
+<div class="backdrop is-hidden" data-modal_buy>
+    <div class="modal">
+        <button  type="button" class="modal__close-button" data-modal__close>
+            <svg class="header__menu-icon" width="14" height="14">
+                <use href="../src/images/symbol-defs.svg#icon-close"></use>
+            </svg>
+        </button>
+        <div role="group" class="form__container">
+            <b class="form__title"> Complete your order here</b>
+            <form>
+                <div class="form-name-container">
+                <div class="form__field">
+                    <label class="form__field__label-name" for="name">First Name</label>
+                    <input class="form__field__input-name" type="text" name="name" id="name" autocomplete="off">
+                </div>
+                <div class="form__field">
+                    <label class="form__field__label-middle-name" for="middle-name">Middle-name</label>
+                    <input class="form__field__input-middle-name" type="text" name="middle-name" id="middle-name" autocomplete="off">
+                </div>
+                <div class="form__field">
+                    <label class="form__field__label-last-name" for="name">Last-name</label>
+                    <input class="form__field__input-last-name" type="text" name="last-name" id="last-name" autocomplete="off">
+                </div>
+                    </div>
+                    <div class="form-mail-container">
+                <div class="form__field2">
+                    <label class="form__field2__label-tel" for="tel">Phone</label>
+                    <input class="form__field2__input-tel" type="tel" name="tel" id="tel">
+                </div>
+                <div class="form__field2">
+                    <label class="form__field2__label-mail" for="mail">Mail</label>
+                    <input class="form__field2__input-mail" type="email" name="mail" id="mail">
+                </div>
+                </div>
+                <div class="form__field">
+                    <label class="form__field__label-comment" for="comment">Type products you want to buy here</label>
+                    <textarea class="form__field__comment" name="comment" id="comment"
+                        placeholder="Type your order here"></textarea>
+                </div>
+
+                <div class="form__field__policy ">
+                    <label class="form__field__label-policy">
+                        <input class="form__field__input-checkbox" type="checkbox" name="policy">
+                        <span class="form__field__check-icon"></span>
+                        I accept
+                        <a href="" class="form__field__policy-link">License agreement</a>
+                    </label>
+                </div>
+                <button type="submit" class="modal-submit-button">Order</button>
+            </form>
+        </div>
+    </div>
+</div>
