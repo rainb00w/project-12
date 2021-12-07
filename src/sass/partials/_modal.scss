@@ -133,7 +133,7 @@
   position: absolute;
 
   width: 768px;
-  height: 75vh;
+  // height: 75vh;
   top: 50%;
   left: 50%;
   text-align: center;
@@ -146,9 +146,10 @@
   border-radius: 4px;
 
   transform: translate(-50%, -50%) scaleX(1);
-  @media screen and (max-width: 1279px) {
-    height: 100vh;
-  }
+
+  // @media screen and (max-width: 1279px) {
+  //   height: 100vh;
+  // }
   @media screen and (max-width: 767px) {
     width: 480px;
   }
