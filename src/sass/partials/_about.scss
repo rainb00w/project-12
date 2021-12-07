@@ -39,7 +39,7 @@
         text-align: start;
         display: flex;
         padding-left: 39px;
-    }    
+    } 
     @media screen and (min-width: 1199px) {
         padding-left: 112px;
     }
@@ -156,11 +156,12 @@
         padding-left: 0;
         padding-right: 0;
     }
+  
 @media screen and (min-width: 1200px) {
     font-size: 14px;
     line-height: 1.93;
     letter-spacing: 0.04em;
-    padding-left: 0;
+  padding-left: 0;
     padding-right: 0;
     width: 463px;
     height: 100%;
@@ -247,3 +248,4 @@ margine-left: 396px;
     color: $secondary-text-color;
     padding: 20px;
 }
+  
