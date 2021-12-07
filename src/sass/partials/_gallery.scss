@@ -33,6 +33,11 @@
     width: 100%;
     border-radius: 10%;
   }
+  &:hover {
+    transform: scale(0.95);
+    transition-duration: $time;
+    transition-timing-function: $cubic;
+  }
 }
 
 

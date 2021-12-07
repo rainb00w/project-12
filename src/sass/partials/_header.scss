@@ -146,6 +146,7 @@
   width: 6px;
   height: 10px;
   margin-left: 12px;
+  stroke: $accent-color;
 }
 
 .hero-title {
@@ -511,6 +512,11 @@
   border: none;
   border-radius: 50%;
   background-color: $white-color;
+
+  &:hover,
+  &:focus {
+    background-color: $button-hover-background;
+  }
 
   @media screen and (min-width: 768px) {
     width: 18px;
