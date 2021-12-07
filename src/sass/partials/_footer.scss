@@ -190,3 +190,13 @@
     justify-content: space-between;
   }
 }
+
+.footer__contacts .footer__tel:focus,
+.footer__contacts .footer__tel:hover {
+  color: $menu-background;
+  background: $food-truck-background;
+}
+.footer__company .footer__company--text:hover,
+.footer__company .footer__company--text:focus {
+  color: $primary-text-color;
+}

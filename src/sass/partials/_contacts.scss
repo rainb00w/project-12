@@ -234,3 +234,24 @@
     display: none;
   }
 } */
+
+.contacts__phone .contacts__link:focus,
+.contacts__phone .contacts__link:hover {
+  color: $primary-text-color;
+}
+.contacts__item .contacts__ctg:focus,
+.contacts__item .contacts__ctg:hover {
+  color: $accent-color;
+}
+
+.section-products__list__item .section-products__list__title:focus,
+.section-products__list__item .section-products__list__title:hover {
+  color: $primary-text-color;
+}
+
+.section-products__container .section-products__title:focus,
+.section-products__container .section-products__title:hover {
+  /* border: 1px solid $primary-text-color; */
+  border-radius: 4px;
+  background-color: $social-icons-background;
+}
