@@ -224,6 +224,18 @@
     border-radius: 22px;
   }
 }
+
+.contacts {
+  padding-bottom: 67px;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 79px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 83px;
+  }
+}
+
 /* .sectionbg {
   @media screen and(min-width: 1279px) {
     position: absolute;
