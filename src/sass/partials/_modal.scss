@@ -34,10 +34,7 @@
   @media screen and (max-width: 479px) {
     width: 320px;
     margin-left: -215px;
-  
   }
-
-
 
   @media screen and (min-width: 1280px) {
     display: none;
@@ -49,11 +46,15 @@
   visibility: visible;
   pointer-events: initial;
   transform: translateX(0);
+  transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+
   @media screen and (max-width: 767px) {
     transform: translatex(5%);
+    transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   @media screen and (max-width: 479px) {
     transform: translatex(0);
+    transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 
@@ -93,9 +94,8 @@
   line-height: 18px;
   color: #ffffff;
   &:hover {
-      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
-
 }
 .mobile-menu__button {
   display: inline-block;
@@ -112,4 +112,214 @@
   height: 44px;
   background-color: #ffffff;
   border-radius: 22px;
+}
+// !!!!!!!!!!!!!!!!!!!!!!! buy now MODAL
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: opacity 250ms $cubic;
+  &.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+.modal {
+  position: absolute;
+
+  width: 768px;
+  height: 75vh;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  z-index: 100;
+  padding: 40px;
+
+  background: linear-gradient(to right, #feac5e, #c779d0, #4bc0c8);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+
+  transform: translate(-50%, -50%) scaleX(1);
+  @media screen and (max-width: 1279px) {
+    height: 100vh;
+  }
+  @media screen and (max-width: 767px) {
+    width: 480px;
+  }
+  @media screen and (max-width: 479px) {
+    width: 280px;
+  }
+  &__close-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 20px;
+    margin-right: 20px;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+
+    justify-content: center;
+
+    cursor: pointer;
+
+    border: none;
+    background: transparent;
+  }
+}
+.form-name-container {
+  margin-top: 50px;
+  display: flex;
+  align-content: space-between;
+  @media screen and (max-width: 767px) {
+    display: flex;
+    margin-top: 20px;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 100px;
+  }
+  @media screen and (max-width: 479px) {
+    display: block;
+    margin-top: 20px;
+    align-items: unset;
+    margin-right: 0;
+  }
+}
+
+.form__field {
+  &__label-name,
+  &__label-middle-name,
+  &__label-last-name {
+    font-size: 16px;
+    font-family: “DM Sans”, sans-serif;
+    letter-spacing: 0.04em;
+    line-height: 1.145;
+    color: #000000;
+  }
+  &__input-name,
+  &__input-middle-name,
+  &__input-last-name {
+    background: linear-gradient(to left, #feac5e, #c779d0, #4bc0c8);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+  }
+  &__label-comment {
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  &__label-policy {
+    display: inline-block;
+    margin-top: 10px;
+  }
+  &__policy-link {
+    color: #000000;
+  }
+  &__comment {
+    width: 500px;
+    height: 140px;
+    background: linear-gradient(to left, #feac5e, #c779d0, #4bc0c8);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    margin-left: 60px;
+    @media screen and (max-width: 767px) {
+      margin: 0;
+
+      width: 300px;
+      height: 200px;
+    }
+    @media screen and (max-width: 479px) {
+      margin: 0;
+      width: unset;
+      height: 70px;
+    }
+  }
+}
+.form__field2 {
+  margin-top: 40px;
+  @media screen and (max-width: 767px) {
+    margin-top: 15px;
+  }
+  @media screen and (max-width: 479px) {
+    margin-top: 15px;
+  }
+  &__input-tel,
+  &__input-mail {
+    width: 500px;
+    margin-left: 15px;
+    background: linear-gradient(to right, #feac5e, #c779d0, #4bc0c8);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    @media screen and (max-width: 767px) {
+      width: auto;
+      margin: 0;
+    }
+    @media screen and (max-width: 479px) {
+      width: auto;
+      margin: 0;
+    }
+  }
+
+  &__label-tel,
+  &__label-mail {
+    display: inline-block;
+    width: 40px;
+    text-align: start;
+    @media screen and (max-width: 767px) {
+      width: auto;
+      text-align: unset;
+    }
+    @media screen and (max-width: 479px) {
+      width: auto;
+      text-align: unset;
+    }
+  }
+}
+.form-mail-container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  padding-left: 40px;
+  padding-right: 40px;
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-direction: unset;
+    padding: 0;
+  }
+  @media screen and (max-width: 479px) {
+    display: block;
+    flex-direction: unset;
+    padding: 0;
+  }
+}
+.modal-submit-button {
+  display: flex;
+  display: inline-block;
+  margin-top: 40px;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  color: $accent-color;
+  cursor: pointer;
+  border: none;
+  width: 159px;
+  height: 44px;
+  background-color: $white-color;
+  border-radius: 22px;
+  @media screen and (max-width: 767px) {
+  }
+  @media screen and (max-width: 479px) {
+    margin-top: 20px;
+  }
 }
