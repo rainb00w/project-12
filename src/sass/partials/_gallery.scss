@@ -31,12 +31,13 @@
   width: 20%;
   img {
     width: 100%;
-    border-radius: 10%;
+    border-radius: 16%;
   }
   &:hover {
     transform: scale(0.95);
     transition-duration: $time;
     transition-timing-function: $cubic;
+
   }
 }
 

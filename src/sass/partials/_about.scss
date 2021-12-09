@@ -9,32 +9,37 @@
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: contain;
+
   @media screen and (max-width: 480px) {
     background-image: url(../images/mobile/sectionbg1mob.png);
   
   }
-  @media screen and (min-device-pixel-ratio: 2),
+  @media screen and (max-width: 480px) and (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     background-image: url(../images/mobile/sectionbg1mob@2x.png);
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1280px) {
+    background-image: none;
     justify-content: center;
   }
-  @media screen and (min-width: 1199px) {
+
+  @media screen and (min-width: 1279px) {
     background-position: center;
     background-image: url(../images/desktop/sectionbg1-desktop.png);
-    background-size: 100vw 530px;
-  }
-  @media screen and (min-width: 1199px) and (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url(../images/desktop/sectionbg1-desktop@2x.png);
-  }
+    background-size: contain;
+    background-size: 100vw auto;
 
-  @media screen and (min-width: 1199px) {
+  }
+  // @media screen and (min-width: 1279px) and (min-device-pixel-ratio: 2),
+  //   (-webkit-min-device-pixel-ratio: 2),
+  //   (min-resolution: 192dpi),
+  //   (min-resolution: 2dppx) {
+  //   background-image: url(../images/desktop/sectionbg1-desktop@2x.png);
+  // }
+
+  @media screen and (min-width: 1279px) {
     text-align: start;
   }
 }
@@ -45,7 +50,7 @@
     display: flex;
     // padding-left: 39px;
   }
-  @media screen and (min-width: 1199px) {
+  @media screen and (min-width: 1279px) {
     // padding-left: 112px;
   }
   max-width: 100vw;
@@ -219,7 +224,7 @@
 
   @media screen and (max-width: 480px) {
     width: 300px;
-    height: 800px;
+    max-height: 550px;
   }
 }
 

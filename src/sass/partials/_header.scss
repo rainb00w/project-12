@@ -79,6 +79,8 @@
   &:hover,
   &:focus {
     color: $accent-color;
+    transition-duration: $time;
+    transition-timing-function: $cubic;
   }
 }
 
