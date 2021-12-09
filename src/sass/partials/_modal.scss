@@ -216,7 +216,7 @@
     font-family: “DM Sans”, sans-serif;
     letter-spacing: 0.04em;
     line-height: 1.145;
-    color: #000000;
+    color: #ffffff;
   }
   &__input-name,
   &__input-middle-name,
@@ -338,4 +338,8 @@
   @media screen and (max-width: 479px) {
     margin-top: 20px;
   }
+}
+
+.form__field__policy-link {
+  color: #ffffff;
 }
